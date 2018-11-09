@@ -25,7 +25,7 @@ public class TestClassTest {
         if (StringUtils.isEmpty(springXmlPath)) {
             springXmlPath = "classpath*:spring-*.xml";
         }
-        //���������ļ���һ��context��ʾһ������
+//        初始化容器
         context = new ClassPathXmlApplicationContext(springXmlPath.split("[,\\s]+"));
         //容器启动
         context.start();
@@ -56,7 +56,6 @@ public class TestClassTest {
      * ��ȡspring�ж����beanʵ��
      *
      * @param clazz
-     *
      * @return
      */
     protected <T extends Object> T getBean(Class<T> clazz) {
