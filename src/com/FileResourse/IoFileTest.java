@@ -14,6 +14,9 @@ public class IoFileTest extends TestClassTest {
         super("spring-resourse.xml");
     }
 
+    /*
+    文件操作案例
+     */
     @Test
     public void getFile(){
         FileIO fileIO = super.getBean("fileIo");
