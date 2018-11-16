@@ -15,6 +15,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/com/imooc/Resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/com/bean/beanxml" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/FileResourse/FileXml" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
