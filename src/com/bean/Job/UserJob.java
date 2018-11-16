@@ -1,12 +1,10 @@
 package com.bean.Job;
 
-public class UserJob implements IUserJob {
+public class UserJob {
 
-    public UserJob() {
+    public void say(String word){
+
+        System.out.println("Bean自动装配测试：" + word);
     }
 
-    @Override
-    public void UpdateUserInfo(String name) {
-        System.out.println("用户信息已更新为：" + name);
-    }
 }

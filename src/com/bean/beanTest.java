@@ -1,18 +1,25 @@
 package com.bean;
 
-import com.bean.Service.IUserService;
+import com.bean.Service.UserService;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.BlockJUnit4ClassRunner;
+import test.com.imooc.TestClassTest;
 
-public class beanTest {
+@RunWith(BlockJUnit4ClassRunner.class)
+public class beanTest extends TestClassTest {
 
-    private IUserService IUserService;
-
-    public beanTest(IUserService iUserService) {
-        this.IUserService = iUserService;
+    public beanTest() {
+        super("classpath:autobean.xml");
     }
 
+    /*
+    Bean自动装配实践
+     */
     @Test
-    public void Test(){
-        IUserService.UpdateUserInfo("注解");
+    public void Test()
+    {
+        UserService service = super.getBean("userService");
+        service.say("burand");
     }
 }
