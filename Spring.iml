@@ -6,6 +6,7 @@
         <fileset id="fileset" name="Spring Injection" removed="false">
           <file>file://$MODULE_DIR$/src/com/imooc/Resources/spring-injection.xml</file>
           <file>file://$MODULE_DIR$/src/com/autobean/xml/spring-autobean.xml</file>
+          <file>file://$MODULE_DIR$/src/com/autowire/wireXml/spring-autowired.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -18,6 +19,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/com/bean/beanxml" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/com/FileResourse/FileXml" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/com/autobean/xml" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/autowire/wireXml" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
