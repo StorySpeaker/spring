@@ -13,6 +13,10 @@ public class Jdbean {
     public Jdbean() {
     }
 
+    /**
+     * 设置姓名
+     * @param name 姓名
+     */
     public void sendname(String name){
         System.out.println("Jdbean sayed:" + name);
     }

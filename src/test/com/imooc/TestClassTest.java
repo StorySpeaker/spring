@@ -40,7 +40,7 @@ public class TestClassTest {
     }
 
     /**
-     * ��ȡspring�ж����beanʵ��
+     * 根据beanId获取
      *
      * @param beanId
      * @return
@@ -53,7 +53,7 @@ public class TestClassTest {
     }
 
     /**
-     * ��ȡspring�ж����beanʵ��
+     * 根据类获取
      *
      * @param clazz
      * @return

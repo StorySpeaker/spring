@@ -20,6 +20,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/com/FileResourse/FileXml" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/com/autobean/xml" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/com/autowire/wireXml" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/ArrayAndMap/amxml" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
