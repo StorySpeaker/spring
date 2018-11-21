@@ -1,6 +1,7 @@
 package com.ArrayAndMap.xmclass;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -14,6 +15,10 @@ public class AmInvoker {
 
     @Autowired
     private Map<String, BeanInterface> map;
+
+    @Autowired
+    @Qualifier("beanImplOne") //指定具体实现类
+    private BeanInterface beanInterface;
 
     public void say(){
         if (list != null && list.size() != 0) {
@@ -32,6 +37,13 @@ public class AmInvoker {
             }
         }else {
             System.out.println("map is null!");
+        }
+
+        System.out.println("qualifier: ");
+        if (beanInterface != null) {
+            System.out.println(beanInterface.getClass().getName());
+        }else {
+            System.out.println("beaninterface is null!");
         }
 
     }
