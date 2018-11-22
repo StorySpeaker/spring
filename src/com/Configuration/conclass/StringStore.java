@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class StringStore {
 
-    @Bean(name = "store")
+    @Bean(name = "store",initMethod = "init", destroyMethod = "destroy")
     public Store storeClass(){
         return new StoreClass();
     }
