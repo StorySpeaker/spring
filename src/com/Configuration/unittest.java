@@ -17,4 +17,13 @@ public class unittest extends TestClassTest {
         Store store = super.getBean("store");
         System.out.println(store.getClass().getName());
     }
+
+    @Test
+    public void Code() {
+        Store store = super.getBean("store");
+        System.out.println(store.hashCode());
+
+        store = super.getBean("store");
+        System.out.println(store.hashCode());
+    }
 }
