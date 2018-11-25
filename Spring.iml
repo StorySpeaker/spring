@@ -24,6 +24,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/com/Configuration/conxml" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/com/ValueResourse/valuexml" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/com/jsr/jsrxml" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/aspect/aspectxml" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

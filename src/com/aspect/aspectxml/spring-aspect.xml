@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+         http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="aspectBiz" class="com.aspect.Advice.AspectBiz"></bean>
+
+    <bean id="getAspect" class="com.aspect.Advice.TalkAspect"></bean>
+
+    <aop:config>
+        <aop:aspect id="moocAspectAop" ref="getAspect">
+            <aop:pointcut expression="execution(* com.aspect.Advice.AspectBiz.*(..))" id="getPointcut"></aop:pointcut>
+            <aop:before method="before" pointcut-ref="getPointcut"></aop:before>
+        </aop:aspect>
+    </aop:config>
+</beans>
